@@ -17,7 +17,7 @@ public class CourseAdvice {
         String[] parameterNames = methodSignature.getParameterNames();
 
         try {
-            //通过你需要获取的参数名称的下标获取到对应的值
+            //通过你需要获取的参数名称的下标获取到对应的值。。
             ArrayUtils.indexOf(parameterNames,"");
         }catch (Exception e){
             e.printStackTrace();
