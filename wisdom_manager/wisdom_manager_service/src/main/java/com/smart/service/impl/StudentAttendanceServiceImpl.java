@@ -2,7 +2,6 @@ package com.smart.service.impl;
 
 
 import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.annotation.JSONField;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.smart.mapper.TbStudentMapper;
@@ -10,8 +9,6 @@ import com.smart.pojo.*;
 import com.smart.service.CourseService;
 import com.smart.service.StudentAttendanceService;
 import com.smart.utils.DateUtils;
-import com.smart.utils.JsonUtils;
-import com.smart.utils.StringToJsonSerializer;
 import org.joda.time.DateTime;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

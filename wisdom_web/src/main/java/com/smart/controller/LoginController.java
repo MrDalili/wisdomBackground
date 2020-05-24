@@ -9,11 +9,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 @Controller
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin
 @RequestMapping("/login")
 //@SessionAttributes(value = {"tbStudent","tbTeacher"})
 public class LoginController {
@@ -26,7 +27,7 @@ public class LoginController {
     @Autowired
     private WXLoginService wxLoginService;
     //,method = RequestMethod.POST
-    @RequestMapping("/all")
+    @RequestMapping(value="/all" , method = RequestMethod.POST )
     @ResponseBody
     public WisdomResult webAppLogin(RequestLogin requestLogin, Model model, HttpServletRequest request){
         System.out.println(requestLogin);

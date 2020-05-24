@@ -17,4 +17,10 @@ private WXLoginService wxLoginServiceImpl;
     public String test(){
         return wxLoginServiceImpl.test();
     }
+
+    @RequestMapping("/test1")
+    @ResponseBody
+    public String test1(){
+        return "123";
+    }
 }
